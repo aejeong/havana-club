@@ -1,0 +1,309 @@
+body {
+    padding:0;
+    margin:0;
+    height:100vh;
+    width:100%;
+    font-family: 'Ruda', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+
+ul, p {
+    margin: 0;
+    padding:0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  div {
+    box-sizing:border-box;
+  }
+    
+  a {
+      color:black;
+      text-decoration:none;
+    }
+
+
+#icon-havana-club-logo{
+    margin-top:10px;
+    width: 60px;
+    height: 60px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.main nav{
+    /* border: 1px solid red; */
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    z-index: 1;
+}
+
+.main nav a{
+    color: #ddd;
+    margin:0 25px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.main-image{
+    background: url(./images/cuba-with-car.jpg) no-repeat left center / cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    animation: intro-background 0.8s linear 1 both;
+}
+
+.main-image:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d1;
+    top:0;
+    z-index:-1;
+}
+
+.main-image .main-text span{
+    font-family: 'Paytone One', sans-serif;
+    position: absolute;
+    color: rgba(221, 221, 221, 0.479);
+    font-size: 90px;
+    text-align: center;
+    transform:translate(-50%,-50%);
+    display: inline-block;
+}
+.main-image .main-text span:first-child{
+    width: 500px;
+    top:40%;
+    left:50%;
+    animation: intro 0.5s 0.8s linear 1 both;
+    transform-origin: bottom;
+}
+
+.main-image .main-text span:last-child{
+    width: 450px;
+    top:58%;
+    left:50%;
+    animation: intro 0.5s 1s linear 1 both;
+    transform-origin: bottom;
+}
+
+.sub-text{
+    min-width: 1200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(1.2);
+    /* overflow: hidden; */
+    /* border:1px solid red; */
+}
+
+.bottle img{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation: intro-opacity 0.5s 1.8s linear 1 both;
+    z-index: 1;
+    width: 155px;
+    height: 620px;
+    }
+
+.sub-text h6{
+    font-size: 14px;
+    color:#fff;
+    position: absolute;
+    /* animation: intro-opacity 0.5s 1.8s linear 1 both; */
+}
+.sub-text h6 span{
+    display: block;
+    font-size: 10px;
+}
+
+.sub-text h6:first-child{
+    left:20%;
+    top:100%;
+    animation: intro-show-up 0.5s 1s linear 1 both;
+}
+
+.sub-text h6:last-child{
+    right:20%;
+    top:100%;
+    animation: intro-show-up 0.5s 1s linear 1 both;
+}
+
+.sub-text h6:first-child:after,
+.sub-text h6:last-child:before{
+    position:absolute;
+    content:'';
+    width: 70%;
+    height: 4px;
+    display:inline-block;
+    background-color: rgba(221, 221, 221, 0.479);
+    /* animation: intro-opacity 0.5s 1.4s linear 1 both; */
+}
+
+.sub-text h6:first-child:after{
+    top:50%;
+    left:110%;
+}
+
+.sub-text h6:last-child:before{
+    top:50%;
+    left: -85%;
+}
+
+/* stroy */
+
+.story{
+    /* height: 100vh; */
+    /* background-color: pink; */
+    /* background: url(./images/cuba-with-car.jpg) no-repeat left center / cover; */
+    background: url(./images/veradero.jpg) no-repeat left center / cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.story:after,
+.story-second:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d1;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.text-area{
+    float: right;
+    width: 50%;
+    background-color: #020202c2;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.text-area.second{
+    float:left;
+}
+
+.text-area.third{
+    float: right;
+    background-color: #fff;
+}
+
+.text-area.left{
+    float:left;
+}
+
+.text-area.third h2{
+    color:#967140;
+}
+
+.text-area h2{
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.text-area h2 ~ span{
+    font-size: 38px;
+    display: block;
+}
+
+.text-area p{
+    width: 300px;
+    line-height: 2em;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.story > span{
+    position: absolute;
+    bottom: 5%;
+    color: #FFC107;
+    left: 3%;
+}
+
+.story-second{
+    background: url(./images/havana.jpg) no-repeat left center / cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.ingredients{
+    height: 100vh;
+    background-color: #F9F8F4;
+}
+
+
+
+@keyframes intro-background{
+    0%{
+        transform:scale(2)
+    }
+    100%{
+        transform:scale(1)
+    }
+}
+
+@keyframes intro{
+    0%{
+        transform: translate(-50%,-50%) scale(0);
+    }
+    100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+@keyframes intro-opacity{
+    0%{
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;        
+    }
+}
+
+@keyframes intro-show-up{
+    0%{
+    top:100%;
+    opacity: 0;
+    }
+    50%{
+    top:75%;
+    opacity: 0.5;
+    }
+    100%{
+    top: 45%;   
+    opacity: 1;     
+    }
+}
