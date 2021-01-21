@@ -214,19 +214,6 @@ ul, p {
     float:left;
 }
 
-.text-area.third{
-    float: right;
-    background-color: #fff;
-}
-
-.text-area.left{
-    float:left;
-}
-
-.text-area.third h2{
-    color:#967140;
-}
-
 .text-area h2{
     font-size: 48px;
     margin-bottom: 40px;
@@ -264,7 +251,75 @@ ul, p {
     background-color: #F9F8F4;
 }
 
+.ingredients p,
+.ingredients ul li{
+    color:rgb(131, 131, 131);
+}
+.ingredients ul li{
+    text-align: left;
+    margin-bottom:16px;
+}
 
+.ingredients ul li span{
+font-size: 20px;
+}
+
+.ingredients ul li > span:before{
+display:inline-block;
+    content:'';
+    width: 70px;
+    height: 1px;
+    margin:0 5px;
+    background-color: #967140;
+    vertical-align: middle;
+}
+.ingredients ul li::before{
+display: inline-block;
+content:'\2022';
+color:#967140;
+font-weight: bold;
+margin-right: 5px;
+vertical-align: middle;
+}
+
+.ingredients .text-area.third{
+    float: right;
+    background-color: #fff;
+}
+
+.ingredients .text-area.left{
+    position: relative;
+    float:left;
+    background: unset;
+    color:#967140;
+}
+
+.ingredients .text-area.third h2{
+    color:#967140;
+}
+
+
+.havana-club{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    fill: #e6e6e6;
+    width: 280px;
+    height: 280px;
+    /* font-family: 'Jacques Francois Shadow', cursive;
+    font-size:40px;
+    color:#e4e2e2; */
+    animation: text-ani 10s linear infinite;
+}
+
+@keyframes text-ani{
+    0%{
+        transform:rotate(0);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
 
 @keyframes intro-background{
     0%{
